@@ -1,7 +1,8 @@
-import router from "next/router";
+import { useRouter } from "next/router";
 
 const Index = () => {
   let routeTitle;
+  const router = useRouter();
   if (typeof window !== "undefined") {
     const { route } = router;
     routeTitle =

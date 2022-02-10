@@ -29,7 +29,7 @@ const App = (props: AppProps) => {
           property="og:image"
           content="https://www.johnson-ubaezuonu.com/assets/johnson.jpg"
         />
-        <link rel="icon" type="image/png" href="/icons/portfolio-icon.png" />
+        <link rel="icon" type="image/png" href="/icons/logo.svg" />
         <title>Portfolio page</title>
       </Head>
       <Component {...pageProps} />

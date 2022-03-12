@@ -1,6 +1,6 @@
 export const allImageAssets = [
   "/icons/github-icon.svg",
-  "/icons/lnkedin-icon.svg",
+  "/icons/linkedin-icon.svg",
   "/icons/loading-icon-rosary.svg",
   "/icons/loading-icon-tail.svg",
   "/icons/loading-icon-typing.svg",

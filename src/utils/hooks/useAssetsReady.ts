@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-const preloadImage: (imageUrl: string) => Promise<void> = imageUrl =>
+const preloadImage: (imageUrl: string) => Promise<any> = imageUrl =>
   new Promise((resolve, reject) => {
     const img = new Image();
     img.src = imageUrl;
-    img.onload = () => resolve();
-    img.onerror = () => reject();
+    img.onload = resolve;
+    img.onerror = evt => reject((evt as Event).target);
   });
 
 /**
@@ -24,6 +24,7 @@ const useAssetsReady: (imageUrls: string[]) => boolean = imageUrls => {
         setAllLoaded(true);
       } catch (error) {
         console.error("Unable to load assets: ", error);
+        setAllLoaded(true); // Proceed anyway
       }
     };
 

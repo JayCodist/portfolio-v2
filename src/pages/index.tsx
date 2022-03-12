@@ -1,20 +1,23 @@
-import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import SplashScreen from "../components/splash-screen/SplashScreen";
+import { allImageAssets, minimumWaitTime } from "../utils/constants";
+import useAssetsReady from "../utils/hooks/useAssetsReady";
 
 const Index = () => {
-  let routeTitle;
-  const router = useRouter();
-  if (typeof window !== "undefined") {
-    const { route } = router;
-    routeTitle =
-      (route.split("/").pop() || "").replace("-", " ") || "Landing Page";
-  }
+  const assetsLoaded = useAssetsReady(allImageAssets);
+  const [waiting, setWaiting] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setWaiting(false), minimumWaitTime);
+  }, []);
 
   return (
     <main className="content-layout">
-      <h1 suppressHydrationWarning className="capitalize">
-        {routeTitle}
-      </h1>
-      <p>Coming soon</p>
+      {!waiting && assetsLoaded ? (
+        <section>Loaded!!</section>
+      ) : (
+        <SplashScreen />
+      )}
     </main>
   );
 };

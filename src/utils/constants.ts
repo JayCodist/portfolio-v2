@@ -21,9 +21,9 @@ export const allImageAssets = [
 /**
  * Minimum time (in milliseconds) for splash screen to show, even if assets have been loaded
  */
-export const minimumWaitTime = 1000;
+export const minimumWaitTime = 3000000;
 
 /**
  * Maximum time (in milliseconds) for splash screen to show, even if all assets have not been loaded
  */
-export const maximumWaitTime = 4000;
+export const maximumWaitTime = 6000000;

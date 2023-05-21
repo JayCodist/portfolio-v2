@@ -1,3 +1,5 @@
+import useDarkMode from "use-dark-mode";
+import Portfolio from "../components/portfolio/Portfolio";
 import SplashScreen from "../components/splash-screen/SplashScreen";
 import {
   allImageAssets,
@@ -6,6 +8,7 @@ import {
 } from "../utils/constants";
 
 const Index = () => {
+  const {} = useDarkMode(false);
   return (
     <main className="content-layout">
       <SplashScreen
@@ -13,7 +16,7 @@ const Index = () => {
         minimumWaitTime={minimumWaitTime}
         assets={allImageAssets}
       >
-        <section>Loaded!!</section>
+        <Portfolio />
       </SplashScreen>
     </main>
   );

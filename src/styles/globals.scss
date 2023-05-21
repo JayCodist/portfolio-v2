@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: background-color 0.3s ease;
   &.light-mode {
     background-color: #fff;
@@ -92,8 +92,9 @@ button {
   min-height: 100vh;
   padding: 2rem;
 }
-.content-layout {
-  padding-right: 1rem;
+.app-layout {
+  position: relative;
+  padding-top: 6rem;
 }
 .flex {
   display: flex;

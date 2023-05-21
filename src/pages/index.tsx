@@ -10,7 +10,7 @@ import {
 const Index = () => {
   const {} = useDarkMode(false);
   return (
-    <main className="content-layout">
+    <div>
       <SplashScreen
         maximumWaitTime={maximumWaitTime}
         minimumWaitTime={minimumWaitTime}
@@ -18,7 +18,7 @@ const Index = () => {
       >
         <Portfolio />
       </SplashScreen>
-    </main>
+    </div>
   );
 };
 

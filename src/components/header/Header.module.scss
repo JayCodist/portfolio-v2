@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1.5rem 4rem;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  .logo {
+    height: 3rem;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    .link {
+      margin: 0 2rem;
+    }
+    .download {
+      border: 0.1rem solid #28e49d;
+      border-radius: 0.7rem;
+      display: flex;
+      align-items: center;
+      padding: 0.4rem 1rem;
+      img {
+        height: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

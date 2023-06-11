@@ -11,7 +11,8 @@ export const resources = {
     DOWNLOAD: "/icons/download-icon.svg"
   },
   images: {
-    HERO_BACKGROUND: "/images/hero-background.svg"
+    HERO_BACKGROUND_LIGHT: "/images/hero-bg-light.svg",
+    HERO_BACKGROUND_DARK: "/images/hero-bg-dark.svg"
   }
 };
 
@@ -29,3 +30,5 @@ export const minimumWaitTime = 3000;
  * Maximum time (in milliseconds) for splash screen to show, even if all assets have not been loaded
  */
 export const maximumWaitTime = 6000;
+
+export const email = "jaycodist@gmail.com";

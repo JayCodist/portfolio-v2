@@ -1,0 +1,9 @@
+.wrapper {
+  .section {
+    display: flex;
+    flex-direction: column;
+    &.first {
+      background-image: url(/public/images/hero-bg-dark.svg);
+    }
+  }
+}

@@ -2,8 +2,46 @@
   .section {
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
     &.first {
-      background-image: url(/public/images/hero-bg-dark.svg);
+      background-image: url("/images/hero-bg-dark.svg");
+      background-size: 60vw 70vh;
+      background-position: top right;
+      background-repeat: no-repeat;
+      padding: 5rem 8rem;
+      font-weight: 600;
+      &.light {
+        background-image: url("/images/hero-bg-light.svg");
+      }
+      .hello {
+        color: #28e49d;
+        font-size: 1.4rem;
+      }
+      .johnson {
+        color: white;
+        font-size: 4.2rem;
+      }
+      .identity {
+        color: #83debb;
+        font-size: 4.2rem;
+      }
+      .desc {
+        font-size: 1.2rem;
+        width: 60%;
+        font-weight: 300;
+        opacity: 0.9;
+        color: #28e49d;
+        margin-top: 1rem;
+      }
+      .invite {
+        margin-top: 5rem;
+        font-weight: bold;
+        a {
+          font-weight: 300;
+          opacity: 0.9;
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }

@@ -9,19 +9,26 @@ const Portfolio: FunctionComponent = () => {
   return (
     <div className="app-layout">
       <Header />
-      <main
-        className={`${styles.wrapper} ${isDark ? styles.dark : styles.light}`}
-      >
-        <section className={`${styles.section} ${styles.first}`}>
-          <span>Hi, my name is</span>
-          <h2>Johnson,</h2>
-          <h2>I'm a Web Developer</h2>
-          <span>
+      <main className={styles.wrapper}>
+        <section
+          className={[
+            styles.section,
+            styles.first,
+            isDark ? styles.dark : styles.light
+          ].join(" ")}
+        >
+          <span className={styles.hello}>Hi, my name is</span>
+          <h2 className={styles.johnson}>Johnson,</h2>
+          <h2 className={styles.identity}>I'm a Web Developer</h2>
+          <span className={styles.desc}>
             Experienced full stack engineer with demonstrably strong technical
             skills and interpersonal acumen
           </span>
-          <span>
-            Let's work together <a href={`mailto:${email}`}>{email}</a>
+          <span className={styles.invite}>
+            Let's work together{" "}
+            <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
+              {email}
+            </a>
           </span>
         </section>
       </main>

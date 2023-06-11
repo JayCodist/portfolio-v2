@@ -31,6 +31,8 @@ const Header: FunctionComponent = () => {
         <a
           href="https://drive.google.com/file/d/1uCRYmuRf_zPpMbOvhTqTA8RCsuA6hwbC/view?usp=sharing"
           className={styles.download}
+          target="_blank"
+          rel="noreferrer"
         >
           My Resume
           <img alt="download" src={resources.icons.DOWNLOAD} />

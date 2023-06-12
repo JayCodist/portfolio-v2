@@ -1,5 +1,3 @@
-@use "variables";
-
 html {
   scroll-behavior: smooth;
   font-size: 92%;
@@ -47,15 +45,21 @@ html {
 
 body {
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 1s ease;
+  --primary-color: #28e49d;
+  --primary-bg: #09182a;
+  --primary-text: #ffffff;
+  --accent-text: #83debb;
+  --sub-text: #28e49d;
   &.light-mode {
-    background-color: variables.$primary-bg-light;
-    color: variables.$primary-color-light;
+    --primary-color: #030c17;
+    --primary-bg: #ffffff;
+    --primary-text: #034a37;
+    --accent-text: #03b888;
+    --sub-text: #034a37;
   }
-  &.dark-mode {
-    background-color: variables.$primary-bg-dark;
-    color: variables.$primary-color-dark;
-  }
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
 }
 a,
 a:visited {

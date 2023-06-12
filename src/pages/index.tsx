@@ -10,7 +10,7 @@ import {
 const Index = () => {
   const {} = useDarkMode(false);
   return (
-    <div>
+    <div className="app-wrapper">
       <SplashScreen
         maximumWaitTime={maximumWaitTime}
         minimumWaitTime={minimumWaitTime}

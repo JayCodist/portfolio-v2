@@ -3,9 +3,10 @@ import Header from "../header/Header";
 import { email } from "../../utils/constants";
 import useDarkMode from "use-dark-mode";
 import styles from "./Portfolio.module.scss";
+import Switch from "../switch/Switch";
 
 const Portfolio: FunctionComponent = () => {
-  const { value: isDark } = useDarkMode();
+  const { value: isDark, toggle } = useDarkMode();
   return (
     <div className="app-layout">
       <Header />
@@ -25,10 +26,14 @@ const Portfolio: FunctionComponent = () => {
             skills and interpersonal acumen
           </span>
           <span className={styles.invite}>
-            Let's work together{" "}
+            <span>Let's work together</span>{" "}
             <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
               {email}
             </a>
+          </span>
+          <span className={styles.switch}>
+            <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
+            <Switch checked={isDark} onChange={toggle} />
           </span>
         </section>
       </main>

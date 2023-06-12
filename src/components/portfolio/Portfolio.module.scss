@@ -8,7 +8,7 @@
       background-size: 60vw 70vh;
       background-position: top right;
       background-repeat: no-repeat;
-      padding: 5rem 8rem;
+      padding: 5rem 10rem;
       font-weight: 600;
       &.light {
         background-image: url("/images/hero-bg-light.svg");
@@ -16,6 +16,7 @@
       .hello {
         color: #28e49d;
         font-size: 1.4rem;
+        margin-bottom: 0.6rem;
       }
       .johnson {
         color: white;
@@ -26,20 +27,38 @@
         font-size: 4.2rem;
       }
       .desc {
-        font-size: 1.2rem;
-        width: 60%;
+        width: 35rem;
         font-weight: 300;
         opacity: 0.9;
         color: #28e49d;
-        margin-top: 1rem;
+        margin-top: 0.6rem;
       }
       .invite {
         margin-top: 5rem;
         font-weight: bold;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #28e49d;
+          width: 10rem;
+          height: 0.15rem;
+          border-radius: 0.5rem;
+          right: calc(100% + 1rem);
+          top: 40%;
+        }
         a {
           font-weight: 300;
           opacity: 0.9;
           margin-left: 1rem;
+        }
+      }
+      .switch {
+        margin: 8rem 0 4rem;
+        display: flex;
+        align-items: center;
+        & > :first-child {
+          margin-right: 1rem;
         }
       }
     }

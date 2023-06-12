@@ -1,11 +1,12 @@
 import { FunctionComponent } from "react";
 import styles from "./Switch.module.scss";
+import useDarkMode from "use-dark-mode";
 
 interface SwitchProps {
   onChange: (checked: boolean) => void;
   text?: string | number | JSX.Element;
   responsive?: boolean;
-  size?: "small" | "default";
+  size?: "small" | "default" | "large";
   name?: string;
   checked: boolean;
   defaultChecked?: boolean;
@@ -25,6 +26,8 @@ const Switch: FunctionComponent<SwitchProps> = props => {
     disabled,
     id
   } = props;
+
+  const { value: isDark } = useDarkMode();
 
   return (
     <label
@@ -46,7 +49,12 @@ const Switch: FunctionComponent<SwitchProps> = props => {
         id={id}
       />
       {text && <span className={styles.text}>{text}</span>}
-      <span className={styles["switch-wrapper"]}>
+      <span
+        className={[
+          styles["switch-wrapper"],
+          isDark ? styles.dark : styles.light
+        ].join(" ")}
+      >
         <span className={styles["switch-icon"]} />
       </span>
     </label>

@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "nextstart": "next start",
     "lint": "eslint .",
-    "export": "next export",
     "deploy": "firebase deploy --only hosting:johnson-ubaezuonu --project jaycodist-projects"
   },
   "dependencies": {

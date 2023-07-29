@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "source": ".",
+    "site": "johnson-ubaezuonu",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",

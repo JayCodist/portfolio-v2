@@ -65,6 +65,12 @@
         }
       }
     }
+    &.second {
+      background-color: #EFF4FB;
+      background-image: url("/icons/about-me.svg");
+      background-repeat: no-repeat;
+      background-size: 100vw auto;
+    }
   }
 }
 

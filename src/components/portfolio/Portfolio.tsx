@@ -36,6 +36,15 @@ const Portfolio: FunctionComponent = () => {
             <Switch checked={isDark} onChange={toggle} />
           </span>
         </section>
+        <section
+          className={[
+            styles.section,
+            styles.second,
+            isDark ? styles.dark : styles.light
+          ].join(" ")}
+        >
+          <h3>About Me</h3>
+        </section>
       </main>
     </div>
   );

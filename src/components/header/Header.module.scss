@@ -7,6 +7,16 @@
   top: 0;
   left: 0;
   width: 100vw;
+  background-color: var(--primary-bg);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  transition: 0.3s ease-out;
+  &.dark {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+  }
+  &.top {
+    box-shadow: unset;
+  }
   .logo {
     height: 3rem;
   }
@@ -17,7 +27,7 @@
       margin: 0 2rem;
     }
     .download {
-      border: 0.1rem solid #28e49d;
+      border: 0.1rem solid var(--accent-text);
       border-radius: 0.7rem;
       display: flex;
       align-items: center;

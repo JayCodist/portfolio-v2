@@ -1,11 +1,36 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { resources } from "../../utils/constants";
 import styles from "./Header.module.scss";
+import useDarkMode from "use-dark-mode";
 
 const Header: FunctionComponent = () => {
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  const isAtTopRef = useRef(isAtTop);
+  isAtTopRef.current = isAtTop;
+
+  const { value: isDark } = useDarkMode();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const isAtTop = isAtTopRef.current;
+      if (window.scrollY === 0 && !isAtTop) {
+        setIsAtTop(true);
+      } else if (isAtTop && window.scrollY !== 0) {
+        setIsAtTop(false);
+      }
+    });
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={[
+        styles.header,
+        isDark ? styles.dark : styles.light,
+        isAtTop && styles.top
+      ].join(" ")}
+    >
       <Link href="/" passHref>
         <a>
           <img

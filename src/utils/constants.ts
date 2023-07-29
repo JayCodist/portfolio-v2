@@ -3,6 +3,7 @@ export const resources = {
     LOGO: "/icons/logo.svg",
     LOGO_FULL: "/icons/logo-full.svg",
     LINKEDIN: "/icons/linkedin-icon.svg",
+    GITHUB: "/icons/github-icon.svg",
     LOADING_ROSARY: "/icons/loading-icon-rosary.svg",
     LOADING_TAIL: "/icons/loading-icon-tail.svg",
     LOADING_TYPING: "/icons/loading-icon-typing.svg",
@@ -12,7 +13,8 @@ export const resources = {
   },
   images: {
     HERO_BACKGROUND_LIGHT: "/images/hero-bg-light.svg",
-    HERO_BACKGROUND_DARK: "/images/hero-bg-dark.svg"
+    HERO_BACKGROUND_DARK: "/images/hero-bg-dark.svg",
+    JOHNSON: "/images/johnson.jpg"
   }
 };
 

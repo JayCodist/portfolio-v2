@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
 import Header from "../header/Header";
-import { email } from "../../utils/constants";
+import { email, resources } from "../../utils/constants";
 import useDarkMode from "use-dark-mode";
 import styles from "./Portfolio.module.scss";
 import Switch from "../switch/Switch";
+import Socials from "../socials/Socials";
 
 const Portfolio: FunctionComponent = () => {
   const { value: isDark, toggle } = useDarkMode();
@@ -43,7 +44,46 @@ const Portfolio: FunctionComponent = () => {
             isDark ? styles.dark : styles.light
           ].join(" ")}
         >
-          <h3>About Me</h3>
+          <h3 className={styles["section-header"]}>About Me</h3>
+          <div className="flex between">
+            <div className={styles["johnson-image-wrapper"]}>
+              <img
+                alt="johnson ubaezuonu"
+                src={resources.images.JOHNSON}
+                className={styles["johnson-image"]}
+              />
+              <span className={styles["johnson-image-frame"]} />
+            </div>
+            <div className={styles.headline}>
+              <h2 className={styles.name}>
+                <span className="primary-text">Johnson</span>{" "}
+                <span className="accent-text">Ubaezuonu</span>
+              </h2>
+              <p className="sub-text">
+                I am a Senior Frontend Developer at Interswitch Group, a leading
+                fintech company in Africa, where I leverage my full-stack
+                engineering skills and experience to build frontend interfaces
+                and portals for fintech solutions. I have a Bachelor's degree in
+                Computer Engineering from the University of Benin, and multiple
+                certifications in AWS, Lean Six Sigma, and Data-Driven
+                Serverless Applications.
+                <br />
+                <br />
+                With over six years of experience in creating and maintaining
+                web and mobile applications using various technologies and
+                frameworks, such as React, Node.js, MongoDB, React-Native,
+                ExpressJS, Angular, Ionic, and more, I am passionate about
+                delivering high-quality, user-friendly, and scalable software
+                products that meet the needs and expectations of clients and
+                users. I collaborate with UI/UX designers, backend developers,
+                and project managers to ensure the best possible outcomes and
+                user experiences. I also write unit tests, automate workflows,
+                and follow best practices and industry standards for code
+                quality and performance.
+              </p>
+              <Socials className="vertical-margin" />
+            </div>
+          </div>
         </section>
       </main>
     </div>

@@ -50,7 +50,7 @@ body {
   --primary-bg: #09182a;
   --primary-text: #ffffff;
   --accent-text: #83debb;
-  --sub-text: #28e49d;
+  --sub-text: #A8EFD4;
   &.light-mode {
     --primary-color: #030c17;
     --primary-bg: #ffffff;
@@ -87,6 +87,17 @@ button {
   * {
     cursor: pointer;
   }
+}
+.primary-text {
+  color: var(--primary-text);
+}
+.accent-text {
+  color: var(--accent-text);
+}
+.sub-text {
+  color: var(--sub-text);
+  font-weight: 300;
+  opacity: 0.7;
 }
 .title {
   font-size: 2rem;

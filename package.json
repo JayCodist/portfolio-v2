@@ -8,7 +8,7 @@
     "nextstart": "next start",
     "lint": "eslint .",
     "export": "next export",
-    "deploy": "next build && next export"
+    "deploy": "next build && next export && firebase deploy --only hosting:johnson-ubaezuonu --project jaycodist-projects"
   },
   "dependencies": {
     "framer-motion": "^6.5.1",

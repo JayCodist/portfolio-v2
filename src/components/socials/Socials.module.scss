@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  align-items: center;
+  .social {
+    margin: 0 1rem;
+    .icon {
+      height: 2rem;
+      width: auto;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent, ReactNode, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { resources } from "../../utils/constants";
 import useAssetsReady from "../../utils/hooks/useAssetsReady";
@@ -17,6 +17,7 @@ interface SplashScreenProps {
    * Maximum wait time in milliseconds
    */
   maximumWaitTime?: number;
+  children: ReactNode;
 }
 
 let minimumWaitTimerRef: ReturnType<typeof setTimeout>;

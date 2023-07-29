@@ -12,8 +12,9 @@ test("Switch works when unchecked", () => {
 
   const switchElement = screen.getByText("Switchy Text");
   expect(switchElement).toBeVisible();
-  const innerInput =
-    switchElement.parentElement?.getElementsByTagName("input")[0];
+  const innerInput = switchElement.parentElement?.getElementsByTagName(
+    "input"
+  )[0];
   expect(innerInput).toBeInTheDocument();
   expect(innerInput).not.toBeChecked();
 });
@@ -23,8 +24,9 @@ test("Switch works when checked", () => {
   render(<Switch checked onChange={onChange} text="Switchy Text" />);
 
   const switchElement = screen.getByText("Switchy Text");
-  const innerInput =
-    switchElement.parentElement?.getElementsByTagName("input")[0];
+  const innerInput = switchElement.parentElement?.getElementsByTagName(
+    "input"
+  )[0];
   expect(innerInput).toBeChecked();
 });
 

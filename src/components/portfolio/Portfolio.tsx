@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Header from "../header/Header";
+import Header, { ResumeDownloader } from "../header/Header";
 import { email, resources } from "../../utils/constants";
 import useDarkMode from "use-dark-mode";
 import styles from "./Portfolio.module.scss";
@@ -59,7 +59,7 @@ const Portfolio: FunctionComponent = () => {
                 <span className="primary-text">Johnson</span>{" "}
                 <span className="accent-text">Ubaezuonu</span>
               </h2>
-              <p className="sub-text">
+              <p className={[styles["sub-text"], "sub-text"].join(" ")}>
                 I am a Senior Frontend Developer at Interswitch Group, a leading
                 fintech company in Africa, where I leverage my full-stack
                 engineering skills and experience to build frontend interfaces
@@ -82,6 +82,8 @@ const Portfolio: FunctionComponent = () => {
                 quality and performance.
               </p>
               <Socials className="vertical-margin" />
+              <br />
+              <ResumeDownloader />
             </div>
           </div>
         </section>

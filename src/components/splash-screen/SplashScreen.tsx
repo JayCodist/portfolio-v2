@@ -35,7 +35,7 @@ const SplashScreen: FunctionComponent<SplashScreenProps> = ({
   assets
 }) => {
   const assetsLoaded = useAssetsReady(assets);
-  const [minimumWaitCheck, setMinimumWaitCheck] = useState(false);
+  const [minimumWaitCheck, setMinimumWaitCheck] = useState(true);
   const [maximumWaitCheck, setMaximumWaitCheck] = useState(false);
 
   useEffect(() => {

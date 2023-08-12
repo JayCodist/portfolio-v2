@@ -51,17 +51,23 @@ const Header: FunctionComponent = () => {
         <Link href="#contact" passHref className={styles.link}>
           Contact
         </Link>
-        <a
-          href="https://drive.google.com/file/d/1uCRYmuRf_zPpMbOvhTqTA8RCsuA6hwbC/view?usp=sharing"
-          className={styles.download}
-          target="_blank"
-          rel="noreferrer"
-        >
-          My Resume
-          <img alt="download" src={resources.icons.DOWNLOAD} />
-        </a>
+        <ResumeDownloader />
       </nav>
     </header>
+  );
+};
+
+export const ResumeDownloader: FunctionComponent = () => {
+  return (
+    <a
+      href="https://drive.google.com/file/d/1uCRYmuRf_zPpMbOvhTqTA8RCsuA6hwbC/view?usp=sharing"
+      className={styles.download}
+      target="_blank"
+      rel="noreferrer"
+    >
+      My Resume
+      <img alt="download" src={resources.icons.DOWNLOAD} />
+    </a>
   );
 };
 

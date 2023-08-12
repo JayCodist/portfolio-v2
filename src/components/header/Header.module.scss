@@ -26,16 +26,17 @@
     .link {
       margin: 0 2rem;
     }
-    .download {
-      border: 0.1rem solid var(--accent-text);
-      border-radius: 0.7rem;
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 1rem;
-      img {
-        height: 1.5rem;
-        margin-left: 1rem;
-      }
-    }
+  }
+}
+.download {
+  border: 0.1rem solid var(--accent-text);
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 0.4rem 1rem;
+  img {
+    height: 1.5rem;
+    margin-left: 1rem;
   }
 }

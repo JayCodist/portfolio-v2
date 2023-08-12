@@ -32,26 +32,24 @@ const Header: FunctionComponent = () => {
       ].join(" ")}
     >
       <Link href="/" passHref>
-        <a>
-          <img
-            alt="logo"
-            src={resources.icons.LOGO_FULL}
-            className={styles.logo}
-          />
-        </a>
+        <img
+          alt="logo"
+          src={resources.icons.LOGO_FULL}
+          className={styles.logo}
+        />
       </Link>
       <nav className={styles.nav}>
-        <Link href="#about" passHref>
-          <a className={styles.link}>About</a>
+        <Link href="#about" passHref className={styles.link}>
+          About
         </Link>
-        <Link href="#work" passHref>
-          <a className={styles.link}>Work</a>
+        <Link href="#work" passHref className={styles.link}>
+          Work
         </Link>
-        <Link href="#mySkills" passHref>
-          <a className={styles.link}>My Skills</a>
+        <Link href="#mySkills" passHref className={styles.link}>
+          My Skills
         </Link>
-        <Link href="#contact" passHref>
-          <a className={styles.link}>Contact</a>
+        <Link href="#contact" passHref className={styles.link}>
+          Contact
         </Link>
         <a
           href="https://drive.google.com/file/d/1uCRYmuRf_zPpMbOvhTqTA8RCsuA6hwbC/view?usp=sharing"

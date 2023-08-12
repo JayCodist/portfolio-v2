@@ -6,10 +6,11 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
   return (
     <div className={[styles.socials, className].join(" ")}>
       <a
-        href=""
+        href="https://www.linkedin.com/in/johnson-ubaezuonu-a46149172"
         target="_blank"
-        rel="noreferer noopener"
+        rel="noopener noreferrer"
         className={styles.social}
+        title="LinkedIn"
       >
         <img
           alt="linkedin"
@@ -18,10 +19,11 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
         />
       </a>
       <a
-        href=""
+        href="https://stackoverflow.com/users/12011575/jaycodist"
         target="_blank"
-        rel="noreferer noopener"
+        rel="noopener noreferrer"
         className={styles.social}
+        title="Stack Overflow"
       >
         <img
           alt="stack overflow"
@@ -30,10 +32,11 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
         />
       </a>
       <a
-        href=""
+        href="https://github.com/JayCodist"
         target="_blank"
-        rel="noreferer noopener"
+        rel="noopener noreferrer"
         className={styles.social}
+        title="GitHub"
       >
         <img
           alt="github"
@@ -42,10 +45,11 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
         />
       </a>
       <a
-        href=""
+        href="https://twitter.com/JayCodist"
         target="_blank"
-        rel="noreferer noopener"
+        rel="noopener noreferrer"
         className={styles.social}
+        title="Twitter"
       >
         <img
           alt="twitter"

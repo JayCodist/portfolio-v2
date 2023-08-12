@@ -2,7 +2,13 @@
   display: flex;
   align-items: center;
   .social {
-    margin: 0 1rem;
+    margin: 0 0.7rem;
+    padding: 0.3rem;
+    background-color: #8ae6dd2d;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:first-child {
       margin-left: 0;
     }

@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "nextstart": "next start",
     "lint": "eslint .",
-    "deploy": "firebase deploy --only hosting:johnson-ubaezuonu --project jaycodist-projects"
+    "deploy": "yarn build && firebase deploy --only hosting:johnson-ubaezuonu --project jaycodist-projects"
   },
   "dependencies": {
     "framer-motion": "^6.5.1",

@@ -10,7 +10,7 @@
     "frameworksBackend": {
       "region": "europe-west1"
     },
-    headers: {
+    "headers": {
       "regex": ".+/\w+\.(jpg|jpeg|png|svg|js|css)$",
       "headers": [ {
         "key": "Cache-Control",

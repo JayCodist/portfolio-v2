@@ -9,6 +9,13 @@
     ],
     "frameworksBackend": {
       "region": "europe-west1"
+    },
+    headers: {
+      "regex": ".+/\w+\.(jpg|jpeg|png|svg|js|css)$",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "max-age=31536000"
+      } ]
     }
   }
 }

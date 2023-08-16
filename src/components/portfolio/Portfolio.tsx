@@ -21,7 +21,9 @@ const Portfolio: FunctionComponent = () => {
         >
           <span className={styles.hello}>Hi, my name is</span>
           <h2 className={styles.johnson}>Johnson,</h2>
-          <h2 className={styles.identity}>I'm a Web Developer</h2>
+          <h2 className={styles.identity}>
+            I'm a <span className="nowrap">Web Developer</span>
+          </h2>
           <span className={styles.desc}>
             Experienced full stack engineer with demonstrably strong technical
             skills and interpersonal acumen
@@ -45,7 +47,7 @@ const Portfolio: FunctionComponent = () => {
           ].join(" ")}
         >
           <h3 className={styles["section-header"]}>About Me</h3>
-          <div className="flex between">
+          <div className="flex between responsive">
             <div className={styles["johnson-image-wrapper"]}>
               <img
                 alt="johnson ubaezuonu"

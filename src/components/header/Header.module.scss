@@ -27,6 +27,10 @@
       margin: 0 2rem;
     }
   }
+  @media (max-width: 850px) {
+    padding: 1.5rem;
+    padding-left: 2.5rem;
+  }
 }
 .download {
   border: 0.1rem solid var(--accent-text);
@@ -35,6 +39,9 @@
   align-items: center;
   align-self: flex-start;
   padding: 0.4rem 1rem;
+  @media (max-width: 850px) {
+    padding: 0.6rem 2rem;
+  }
   img {
     height: 1.5rem;
     margin-left: 1rem;

@@ -50,7 +50,7 @@ body {
   --primary-bg: #09182a;
   --primary-text: #ffffff;
   --accent-text: #83debb;
-  --sub-text: #A8EFD4;
+  --sub-text: #a8efd4;
   &.light-mode {
     --primary-color: #030c17;
     --primary-bg: #ffffff;
@@ -60,6 +60,9 @@ body {
   }
   background-color: var(--primary-bg);
   color: var(--primary-color);
+  @media (max-width: 850px) {
+    font-size: 1.25rem;
+  }
 }
 a,
 a:visited {
@@ -114,6 +117,12 @@ button {
 }
 .flex {
   display: flex;
+  &.responsive {
+    flex-direction: row;
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+  }
   &.column {
     flex-direction: column;
   }
@@ -147,6 +156,9 @@ button {
 }
 .grayed {
   color: rgba(0, 0, 0, 0.3);
+}
+.nowrap {
+  white-space: nowrap;
 }
 .danger {
   color: #ff7452;

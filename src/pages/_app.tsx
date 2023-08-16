@@ -24,10 +24,10 @@ const App = (props: AppProps) => {
           name="og:description"
           content="Portfolio page of Johnson Ubaezuonu"
         />
-        <meta name="og:url" content="www.johnson-ubaezuonu.com" />
+        <meta name="og:url" content="https://johnson-ubaezuonu.web.app" />
         <meta
           property="og:image"
-          content="https://www.johnson-ubaezuonu.com/assets/johnson.jpg"
+          content="https://johnson-ubaezuonu.web.app/images/johnson.jpg"
         />
         <link rel="icon" type="image/png" href="/icons/logo-full.svg" />
         <title>Portfolio page</title>

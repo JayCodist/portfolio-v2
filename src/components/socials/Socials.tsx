@@ -1,8 +1,10 @@
 import { FunctionComponent } from "react";
 import styles from "./Socials.module.scss";
 import { resources } from "../../utils/constants";
+import useDarkMode from "use-dark-mode";
 
 const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
+  const { value: isDark } = useDarkMode();
   return (
     <div className={[styles.socials, className].join(" ")}>
       <a
@@ -14,7 +16,9 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
       >
         <img
           alt="linkedin"
-          src={resources.icons.LINKEDIN}
+          src={
+            isDark ? resources.icons.LINKEDIN_DARK : resources.icons.LINKEDIN
+          }
           className={styles.icon}
         />
       </a>
@@ -27,7 +31,11 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
       >
         <img
           alt="stack overflow"
-          src={resources.icons.STACK_OVERFLOW}
+          src={
+            isDark
+              ? resources.icons.STACK_OVERFLOW_DARK
+              : resources.icons.STACK_OVERFLOW
+          }
           className={styles.icon}
         />
       </a>
@@ -40,7 +48,7 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
       >
         <img
           alt="github"
-          src={resources.icons.GITHUB}
+          src={isDark ? resources.icons.GITHUB_DARK : resources.icons.GITHUB}
           className={styles.icon}
         />
       </a>
@@ -53,7 +61,7 @@ const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
       >
         <img
           alt="twitter"
-          src={resources.icons.TWITTER}
+          src={isDark ? resources.icons.TWITTER_DARK : resources.icons.TWITTER}
           className={styles.icon}
         />
       </a>

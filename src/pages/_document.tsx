@@ -13,7 +13,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <Script src="noflash.js" strategy="beforeInteractive" />
+          <Script src="noFlash.js" strategy="beforeInteractive" />
           <Main />
           <NextScript />
         </body>

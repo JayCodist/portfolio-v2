@@ -39,7 +39,7 @@ const Header: FunctionComponent = () => {
         />
       </Link>
       <nav className={styles.nav}>
-        <Link href="#about" passHref className={styles.link}>
+        {/* <Link href="#about" passHref className={styles.link}>
           About
         </Link>
         <Link href="#work" passHref className={styles.link}>
@@ -50,7 +50,7 @@ const Header: FunctionComponent = () => {
         </Link>
         <Link href="#contact" passHref className={styles.link}>
           Contact
-        </Link>
+        </Link> */}
         <ResumeDownloader />
       </nav>
     </header>

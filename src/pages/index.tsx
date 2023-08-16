@@ -1,23 +1,18 @@
 import useDarkMode from "use-dark-mode";
 import Portfolio from "../components/portfolio/Portfolio";
-import SplashScreen from "../components/splash-screen/SplashScreen";
-import {
-  allImageAssets,
-  maximumWaitTime,
-  minimumWaitTime
-} from "../utils/constants";
 
 const Index = () => {
   const {} = useDarkMode(false);
   return (
     <div className="app-wrapper">
-      <SplashScreen
+      <Portfolio />
+      {/* <SplashScreen
         maximumWaitTime={maximumWaitTime}
         minimumWaitTime={minimumWaitTime}
         assets={allImageAssets}
       >
-        <Portfolio />
-      </SplashScreen>
+        
+      </SplashScreen> */}
     </div>
   );
 };

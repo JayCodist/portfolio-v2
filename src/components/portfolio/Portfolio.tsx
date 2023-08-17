@@ -1,13 +1,14 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import Header, { ResumeDownloader } from "../header/Header";
 import { email, resources } from "../../utils/constants";
-import useDarkMode from "use-dark-mode";
 import styles from "./Portfolio.module.scss";
 import Switch from "../switch/Switch";
 import Socials from "../socials/Socials";
+import LayoutContext from "../../utils/context/LayoutContext";
 
 const Portfolio: FunctionComponent = () => {
-  const { value: isDark, toggle } = useDarkMode();
+  const { isDark, setIsDark } = useContext(LayoutContext);
+
   return (
     <div className="app-layout">
       <Header />
@@ -35,8 +36,10 @@ const Portfolio: FunctionComponent = () => {
             </a>
           </span>
           <span className={styles.switch}>
-            <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
-            <Switch checked={isDark} onChange={toggle} />
+            <span suppressHydrationWarning>
+              {isDark ? "Light Mode" : "Dark Mode"}
+            </span>
+            <Switch checked={isDark} onChange={setIsDark} />
           </span>
         </section>
         <section

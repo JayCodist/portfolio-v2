@@ -1,10 +1,11 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import styles from "./Socials.module.scss";
 import { resources } from "../../utils/constants";
-import useDarkMode from "use-dark-mode";
+import LayoutContext from "../../utils/context/LayoutContext";
 
 const Socials: FunctionComponent<{ className?: string }> = ({ className }) => {
-  const { value: isDark } = useDarkMode();
+  const { isDark } = useContext(LayoutContext);
+
   return (
     <div className={[styles.socials, className].join(" ")}>
       <a

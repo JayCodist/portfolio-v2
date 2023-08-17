@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import styles from "./Switch.module.scss";
-import useDarkMode from "use-dark-mode";
+import LayoutContext from "../../utils/context/LayoutContext";
 
 interface SwitchProps {
   onChange: (checked: boolean) => void;
@@ -27,7 +27,7 @@ const Switch: FunctionComponent<SwitchProps> = props => {
     id
   } = props;
 
-  const { value: isDark } = useDarkMode();
+  const { isDark } = useContext(LayoutContext);
 
   return (
     <label

@@ -1,19 +1,16 @@
-import useDarkMode from "use-dark-mode";
 import Portfolio from "../components/portfolio/Portfolio";
+import { useContext } from "react";
+import LayoutContext from "../utils/context/LayoutContext";
 
 const Index = () => {
-  const {} = useDarkMode(false);
+  const { isDark } = useContext(LayoutContext);
   return (
-    <div className="app-wrapper">
+    <section
+      className={["app-wrapper", isDark ? "dark-mode" : "light-mode"].join(" ")}
+      suppressHydrationWarning
+    >
       <Portfolio />
-      {/* <SplashScreen
-        maximumWaitTime={maximumWaitTime}
-        minimumWaitTime={minimumWaitTime}
-        assets={allImageAssets}
-      >
-        
-      </SplashScreen> */}
-    </div>
+    </section>
   );
 };
 

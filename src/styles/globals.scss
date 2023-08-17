@@ -46,20 +46,6 @@ html {
 body {
   font-size: 1rem;
   transition: background-color 1s ease;
-  --primary-color: #28e49d;
-  --primary-bg: #09182a;
-  --primary-text: #ffffff;
-  --accent-text: #83debb;
-  --sub-text: #a8efd4;
-  &.light-mode {
-    --primary-color: #030c17;
-    --primary-bg: #ffffff;
-    --primary-text: #034a37;
-    --accent-text: #03b888;
-    --sub-text: #034a37;
-  }
-  background-color: var(--primary-bg);
-  color: var(--primary-color);
   @media (max-width: 850px) {
     font-size: 1.25rem;
   }
@@ -90,6 +76,22 @@ button {
   * {
     cursor: pointer;
   }
+}
+.app-wrapper {
+  --primary-color: #28e49d;
+  --primary-bg: #09182a;
+  --primary-text: #ffffff;
+  --accent-text: #83debb;
+  --sub-text: #a8efd4;
+  &.light-mode {
+    --primary-color: #030c17;
+    --primary-bg: #ffffff;
+    --primary-text: #034a37;
+    --accent-text: #03b888;
+    --sub-text: #034a37;
+  }
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
 }
 .primary-text {
   color: var(--primary-text);

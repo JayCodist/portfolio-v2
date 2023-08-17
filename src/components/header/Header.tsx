@@ -1,8 +1,14 @@
-import { FunctionComponent, useEffect, useRef, useState } from "react";
+import {
+  FunctionComponent,
+  useContext,
+  useEffect,
+  useRef,
+  useState
+} from "react";
 import Link from "next/link";
 import { resources } from "../../utils/constants";
 import styles from "./Header.module.scss";
-import useDarkMode from "use-dark-mode";
+import LayoutContext from "../../utils/context/LayoutContext";
 
 const Header: FunctionComponent = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -10,7 +16,7 @@ const Header: FunctionComponent = () => {
   const isAtTopRef = useRef(isAtTop);
   isAtTopRef.current = isAtTop;
 
-  const { value: isDark } = useDarkMode();
+  const { isDark } = useContext(LayoutContext);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

@@ -22,6 +22,8 @@ export const resources = {
   }
 };
 
+export const safeWindow = typeof window !== "undefined" ? window : null;
+
 export const allImageAssets = [
   ...Object.values(resources.icons),
   ...Object.values(resources.images)

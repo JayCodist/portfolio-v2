@@ -66,7 +66,7 @@ const Header: FunctionComponent = () => {
 export const ResumeDownloader: FunctionComponent = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1uCRYmuRf_zPpMbOvhTqTA8RCsuA6hwbC/view?usp=sharing"
+      href="https://drive.google.com/file/d/1HuyX051AGOw3MZG103_jY86dX__arDw6/view?usp=sharing"
       className={styles.download}
       target="_blank"
       rel="noreferrer"

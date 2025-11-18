@@ -18,7 +18,7 @@ export const resources = {
   images: {
     HERO_BACKGROUND_LIGHT: "/images/hero-bg-light.svg",
     HERO_BACKGROUND_DARK: "/images/hero-bg-dark.svg",
-    JOHNSON: "/images/johnson.jpg"
+    JOHNSON: "/images/johnson.jpeg"
   }
 };
 

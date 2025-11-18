@@ -65,26 +65,19 @@ const Portfolio: FunctionComponent = () => {
                 <span className="accent-text">Ubaezuonu</span>
               </h2>
               <p className={[styles["sub-text"], "sub-text"].join(" ")}>
-                I am a Senior Frontend Developer at Interswitch Group, a leading
-                fintech company in Africa, where I leverage my full-stack
-                engineering skills and experience to build frontend interfaces
-                and portals for fintech solutions. I have a Bachelor's degree in
-                Computer Engineering from the University of Benin, and multiple
-                certifications in AWS, Lean Six Sigma, and Data-Driven
-                Serverless Applications.
+                I am a Senior Fullstack Engineer, with extensive experience in shipping products and solutions. 
+                I have a Bachelor's degree in Computer Engineering from the University of Benin, 
+                and multiple certifications in AWS, Lean Six Sigma, 
+                and Data-Driven Serverless Applications.
                 <br />
                 <br />
-                With over six years of experience in creating and maintaining
-                web and mobile applications using various technologies and
-                frameworks, such as React, Node.js, MongoDB, React-Native,
-                ExpressJS, Angular, Ionic, and more, I am passionate about
-                delivering high-quality, user-friendly, and scalable software
-                products that meet the needs and expectations of clients and
-                users. I collaborate with UI/UX designers, backend developers,
-                and project managers to ensure the best possible outcomes and
-                user experiences. I also write unit tests, automate workflows,
-                and follow best practices and industry standards for code
-                quality and performance.
+                With over eight years of experience in creating and maintaining web and mobile applications using 
+                various technologies and frameworks, such as React, Node.js, MongoDB, React-Native, ExpressJS, C#, ASP.NET, 
+                Golang, Angular, Ionic, Python, and more, I am passionate about delivering high-quality, user-friendly, 
+                and scalable software products that meet the needs and expectations of clients and users. 
+                I collaborate with UI/UX designers, backend developers, and project managers to ensure 
+                the best possible outcomes and user experiences. I also write unit tests, automate workflows, 
+                and follow best practices and industry standards for code quality and performance.
               </p>
               <Socials className="vertical-margin" />
               <br />
